@@ -33,3 +33,4 @@ z (x:xs) ([]) = x:(z xs [])
 z ([]) (x:xs) = x:(z xs [])
 z (x:xs) (y:ys) = (x ++ y):(z xs ys)
 
+
