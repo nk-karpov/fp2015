@@ -24,7 +24,9 @@ unique _ = True
 
 
 main :: IO()
-main = do
-        writeInitialData
-        content <- readFile "data.txt"
-        writeFile "result.txt" $ intercalate "\n" $ processData $ lines content
+main = 
+do
+  writeInitialData
+  content <- readFile "data.txt"
+  writeFile "result.txt" $ intercalate "\n" $ processData $ lines content
+
